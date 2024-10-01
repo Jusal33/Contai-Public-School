@@ -1,0 +1,40 @@
+<HTML>
+	<HEAD><TITLE>Register the form</TITLE>
+<link rel="stylesheet" href="mystyle.css">
+	</HEAD>
+	<BODY bgcolor = "fuchsia" >
+	<h1 style="position:relative; left:200"><b>REGISTRATION FORM</b></h1>
+		<b><center><font size=5 color=brown> This form is for sign in</font></center>
+		<P><P><CENTER>
+		<P><FORM  Action="" Method="POST" onSubmit="return verify()">
+			<P>First Name
+			<INPUT Type="text" Name="name" Size="12" color="red"  			onBlur="checklen()" >
+			<P>Last Name
+			<INPUT Type="text" Name="lastname" Size="12" color="red" 			onBlur="checklen()" >
+			<P> E-Mail address
+			<INPUT Type="Text" Name="email" Size="25" onBlur="checklen			()">
+			<P>Please indicate your Sex
+			<INPUT Type="Radio" Name="sex" Value="m" checked>Male
+			
+			<INPUT Type="Radio" Name="sex" Value="f" >Female<BR>
+			<P>Please enter your DOB as DD/MM/YYYY<BR>
+			<INPUT Type="Text" Name="day" Size="2" >
+			
+			<INPUT Type="Text" Name="month" Size="2">
+			
+			<INPUT Type="Text" Name="year" Size="4" >
+			<P>	<P>Please Type your full address 
+			<TEXTAREA NAME="request" ROWS="3" COLS="50" >
+			</TEXTAREA>
+			<P><P>Can we contact you with information about our products or services.<BR>
+			<INPUT Type="Radio" Name="moreinfo" Value="y">
+			<FONT Color = "Blue">Yes</FONT><IMG Src="img/emailmev.gif" length=30 height=30 >
+			<INPUT Type="Radio" Name="moreinfo" Value="n" Checked="True">
+			<FONT Color = "Red">No, Thanks!</FONT> 
+			<P><CENTER><button>Submit</button>
+			<button>Reset</button> 
+			<button>Abort</button>
+			</FORM>
+		
+	</BODY>
+</HTML>
